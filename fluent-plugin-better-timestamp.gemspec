@@ -2,9 +2,9 @@
 $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.name        = "fluent-plugin-better-timestamp"
-  gem.description = "Output filter plugin which put timestamp"
-  gem.homepage    = "https://github.com/shivaken/fluent-plugin-better-timestamp"
+  gem.name        = "fluent-plugin-better-timestamp-timekey"
+  gem.description = "Output filter plugin which put timestamp with configurable time_key"
+  gem.homepage    = "https://github.com/spynode/fluent-plugin-better-timestamp"
   gem.summary     = gem.description
   gem.version     = File.read("VERSION").strip
   gem.authors     = ["Kenichi Otsuka"]
