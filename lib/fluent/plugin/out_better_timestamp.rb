@@ -40,7 +40,7 @@ module Fluent
 
     def modify_record(time, record)
       if record[@msec_key] then
-        record[@timestamp_key] = Time.at(record[@time_key], record[@msec_key].to_i * 1000).strftime("%Y-%m-%dT%H:%M:%S.%L%z")
+        record[@timestamp_key] = Time.at(record[@time_key].to_i, record[@msec_key].to_i * 1000).strftime("%Y-%m-%dT%H:%M:%S.%L%z")
         record.delete(@msec_key)
       end
       record
